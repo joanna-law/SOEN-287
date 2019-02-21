@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head> 
+    <meta charset="utf-8"/>
+    <title>assignment_1_4</title>
+    <style>
+        body{
+            background-color: #FFEFD5;
+        }
+        .reservation{
+            background-color: mistyrose;
+            color: skyblue;
+            font-weight: bold
+        }
+        .room{
+            background-color: lightcyan;
+            color: yellowGreen;
+            font-weight: bold
+        }
+        .field_reservation{
+            border-color: mediumblue;
+        }
+        .field_room{
+            border-color: limegreen;
+        }
+        .legend_reservation{
+            color: mediumblue;
+            font-size: 20px;
+        }
+        .legend_room{
+            color: limegreen;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<header>
+    <h1><a href ="https://previews.123rf.com/images/vladwel/vladwel1706/vladwel170600055/80568687-hotel-building-vector-illustration-line-outline-flat-carton-style-from-street-view.jpg"><img src ="https://previews.123rf.com/images/vladwel/vladwel1706/vladwel170600055/80568687-hotel-building-vector-illustration-line-outline-flat-carton-style-from-street-view.jpg" height = 50 width = 50 alt = "image of hotel"></a>Hotel Reservation Form</h1>
+</header>
+    <div class = "reservation">
+    <fieldset class = "field_reservation">
+        <legend class = "legend_reservation">Reservation Information</legend>
+        Number of Rooms(max 5 people per room): <input type="number"> <br />
+        <br />
+        Smoker? <input type="radio" name="smoker" value="Yes">Yes <input type="radio" name="smoker" value="No">No<br />
+        <br />
+        Check-in: <input type="date" name = "in"> <br />
+        <br />
+        Check-out: <input type="date" name = "out"> <br />
+        <br />
+    </fieldset>
+</div>
+    <br/>
+    <div class = "room">
+        <fieldset class = "field_room">
+            <legend class = "legend_room">Room Specifications</legend>
+            <ul>
+                <li>Number of single/double beds: <br /> <input type="checkbox" name="0/2"> 0/2 <input type="checkbox"
+                        name="2/0"> 2/0 <input type="checkbox" name="1/1"> 1/1 <input type="checkbox" name="0/2">0/2
+                    <input type="checkbox" name="1/2"> 1/2<br /><br/> </li>
+                    <li>Do you have a preferred location for the hotel? <br /> <input type="checkbox" name="Downtown">
+                        Downtown <input type="checkbox" name="Montreal East"> Montreal East <input type="checkbox" name="Montreal West">
+                        Montreal West <input type="checkbox" name="Near to the airport">Near to the airport
+                        <input type="checkbox" name="Old Port">Old Port<input type="checkbox" name="Don't Care">Don't Care<br /><br/></li>
+                    
+                        <li>Price Range per night 
+                        <select>
+                            <option value = "$50">$50</option>
+                            <option value = "$100">$100</option>
+                            <option value = "$150">$150</option>
+                            <option value = "$200">$200</option>
+                            <option value = "$250">$250</option>
+                            <option value = "&$300">$300</option>
+                            <option value = "Any price">No Price Limit</option>
+                        </select>
+                        <br/><br/>
+                    </li>
+                    
+                    <li>Number of private parkings
+                        <br/>
+                        <input type = "radio" name = "parking" value =0 > 0 <br>
+                        <input type = "radio" name = "parking" value =1 > 1 <br>
+                        <input type = "radio" name = "parking" value = 2> 2<br>
+                        <input type = "radio" name = "parking" value = 3> 3<br>
+                        <input type = "radio" name = "parking" value = 4> 4<br>
+                        <br/>
+                    </li>
+                    
+                    <li>Special Facilities <br/>
+                    <input type = "checkbox" name = "facilities" value = "Minibar" > Minibar 
+                    <input type = "checkbox" name = "facilities" value = "Balcony" > Balcony
+                    <input type = "checkbox" name = "facilities" value = "Pool"> Pool
+                    <input type = "checkbox" name = "facilities" value = "Fountain Front"> Fountain Front
+                    <input type = "checkbox" name = "facilities" value = "Garden Front"> Garden Front 
+                    <input type = "checkbox" name = "facilities" value = "Sea Front"> Sea Front
+                </li>
+                </ul>
+                <br/>
+        </fieldset>
+    </div>
+        <br/>
+        Let us see what we have...
+        <br/><br/>
+        <button>Search</button>
+        <button>Start Over</button>
+</html>
