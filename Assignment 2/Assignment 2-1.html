@@ -1,2 +1,143 @@
 <!DOCTYPE HTML>
+
+<head>
+    <title>Stupid webpage about ice cream </title>
+    <style>
+        body {
+        background-image: url("images/iceCream.jpg");   
+        background-size: 100px;
+        }
+        table{
+            border: 5px;
+            border-color: green;
+        }
+        header{
+            width:200px;
+            border-width:15px;
+            padding: 20px;
+            margin:10px;
+            border-color: white;
+        }
+        .tableHeader{
+            background-color: rgb(240, 207, 213);
+        }
+        table td#topLeft{
+            background-color: rgb(231, 253, 255);
+            width: 200px;
+        }
+        table td#topRight{
+            background-color: rgb(212, 240, 199);
+            width: 400px;
+        }
+        table td#bottomLeft{
+            background-color: rgb(244, 231, 255);
+            width: 200px;
+        }
+        table td#bottomRight{
+            background-color: rgb(224, 218, 197);
+            width: 400px;
+        }
+        
+        #bottomLeftList{
+            list-style: upper-roman
+        }
+        #topRightListSub{
+            list-style: square
+        }
+        #topRightList{
+            list-style-image: url("images/chocolateConeSmall.jpg");
+        }
+        #bottomRightListSecond{
+            list-style-image: url("images/vanillaConeSmall.jpg");
+        }
+        #topRightListSecond{
+            list-style: circle;
+        }
+        #topRightListBig{
+            list-style: upper-alpha;
+        }
+        #bottomRightListBig{
+            list-style: upper-armenian;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        Stupid meaningless table
+    </header>
+    <div class = "bigTables">
+    <table border = "2">
+            <tr>
+                <td>
+                    <div class="tableHeader"> Ingredients</div>
+                </td>
+                <td>
+                    <div class="tableHeader">Details</div>
+                </td>
+            </tr>
+            <tr>
+                <td id = "topLeft">
+                         <ol>
+                             <li>milk</li>
+                             <li>sugar</li>
+                             <li>cream</li>
+                         </ol>   
+                </td>
+            
+                <td id = "topRight">
+                        <ol id = "topRightListBig">
+                            <li>Classic Flavours
+                                <ul id = "topRightList">
+                                    <li>apple</li>
+                                    <ul>
+                                        <li id = "topRightListSub">Green Apples</li>
+                                    </ul>
+                                    <li>banana</li>
+                                    <li>orange</li>
+                                </ul>
+                            </li>
+                            <li>Asian Flavours
+                                <ul id = "topRightListSecond">
+                                    <li>taro</li>
+                                    <li>red bean</li>
+                                    <li>matcha</li>
+                                </ul>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id ="bottomLeft">
+                        <ol start = "4">
+                            <li>fruit</li>
+                            <li>gelatin</li>
+                            <li>juice</li>
+                        </ol>
+                </td>
+                <td id="bottomRight">
+                        <ol id = "bottomRightListBig">
+                            <li>Ingredients
+                                <ul id = "bottomRightListFirst">
+                                    <li>milk</li>
+                                    <li>water</li>
+                                </ul>
+                            </li>
+                            <li>Flavoring
+                                <ul id = "bottomRightListSecond">
+                                    <li>salt</li>
+                                    <li>sugar</li>
+                                </ul>
+                            </li>
+                        </ol>
+                </td>
+            </tr>
+
+        <!-- </div> -->
+    </table>
+</div>
+</body>
 <html>
