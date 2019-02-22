@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="UFT-8">
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="allNums"></div>
+</br>
+    Total Number of integers: <div id="totNum"></div>
+    Total number of odd integers: 
+    <div id="odd"></div>
+    Total number of even integers: 
+    <div id="even"></div>
+    <script>
+        var totNum = 0;
+        var odd = 0;
+        var even = -1;
+        do {
+            var userIn = prompt("Please input a list of number:")
+            if ((userIn % 1 == 0) & (userIn > 0)) {
+                (document.getElementById("allNums").innerHTML) += userIn;
+                totNum++;
+            }
+            if (userIn % 2 == 0)
+                even++;
+            if (userIn % 2 == 1)
+                odd++;
+        }
+        while (userIn != 0);
+        document.getElementById("totNum").innerHTML = totNum;
+        document.getElementById("even").innerHTML = even;
+        document.getElementById("odd").innerHTML = odd;
+    </script>
+</body>
+
+</html>

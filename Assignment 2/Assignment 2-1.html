@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
-
+<html lang = "en">
 <head>
+    <meta charset="utf-8"/>
     <title>Stupid webpage about ice cream </title>
     <style>
         body {
@@ -8,32 +9,53 @@
         background-size: 100px;
         }
         table{
-            border: 5px;
-            border-color: green;
+            border: 15px;
+            border-color: blue;
+            border-right-style:dotted;
+            border-left-style: dotted;
+            border-top-style: dashed;
+            border-bottom-style: dashed;
+            margin:30px;
         }
-        header{
-            width:200px;
-            border-width:15px;
-            padding: 20px;
-            margin:10px;
-            border-color: white;
+        .boxHeader{
+            background-color: yellow;
+            width:600px;
+            color:purple;
+            font-size: 30px;
+            border-width:10px;
+            border-style:solid;
+            padding: 12px;
+            margin:30px;
+            border-color: purple;
         }
         .tableHeader{
-            background-color: rgb(240, 207, 213);
+            text-align: center;
+            color: white;
+            padding: 10px;
+            background-color: rgb(77, 0, 14);
         }
         table td#topLeft{
-            background-color: rgb(231, 253, 255);
-            width: 200px;
+            border: 3px solid;
+            border-color: rgb(103, 120, 128);
+            margin:30px;
+            background-color: rgb(199, 228, 240);
+            width: 400px;
         }
         table td#topRight{
+            border: 3px solid;
+            border-color: rgb(129, 148, 120);
             background-color: rgb(212, 240, 199);
             width: 400px;
         }
         table td#bottomLeft{
+            border: 3px solid;
+            border-color: rgb(141, 120, 160);
             background-color: rgb(244, 231, 255);
             width: 200px;
         }
         table td#bottomRight{
+            border: 3px solid;
+            border-color: rgb(192, 179, 134);
             background-color: rgb(224, 218, 197);
             width: 400px;
         }
@@ -52,12 +74,20 @@
         }
         #topRightListSecond{
             list-style: circle;
+            color: rgb(129, 148, 120);
+        }
+        #bottomRightListFirst{
+            list-style: square;
+            color: rgb(192, 179, 134);
         }
         #topRightListBig{
             list-style: upper-alpha;
         }
         #bottomRightListBig{
-            list-style: upper-armenian;
+            list-style: armenian;
+        }
+        #topLeftList{
+            list-style: upper-roman
         }
     </style>
 
@@ -65,10 +95,12 @@
 
 <body>
     <header>
-        Stupid meaningless table
+        <div class = "boxHeader">
+        Joanna Lau Ah Wing - 40083829
+        </div>
     </header>
     <div class = "bigTables">
-    <table border = "2">
+    <table>
             <tr>
                 <td>
                     <div class="tableHeader"> Ingredients</div>
@@ -79,7 +111,7 @@
             </tr>
             <tr>
                 <td id = "topLeft">
-                         <ol>
+                         <ol id = "topLeftList">
                              <li>milk</li>
                              <li>sugar</li>
                              <li>cream</li>
@@ -89,15 +121,15 @@
                 <td id = "topRight">
                         <ol id = "topRightListBig">
                             <li>Classic Flavours
-                                <ul id = "topRightList">
-                                    <li>apple</li>
-                                    <ul>
-                                        <li id = "topRightListSub">Green Apples</li>
-                                    </ul>
-                                    <li>banana</li>
-                                    <li>orange</li>
+                                <ul id="topRightList">
+                                    <li>apple
+                                        <ul>
+                                            <li id="topRightListSub">Green Apples</li>
+                    
                                 </ul>
-                            </li>
+                            <li>banana</li>
+                            <li>orange</li>
+                            </ul>
                             <li>Asian Flavours
                                 <ul id = "topRightListSecond">
                                     <li>taro</li>
@@ -107,12 +139,11 @@
                             </li>
                             
                         </ol>
-                    </div>
                 </td>
             </tr>
             <tr>
                 <td id ="bottomLeft">
-                        <ol start = "4">
+                        <ol start = "4" id = "bottomLeftList">
                             <li>fruit</li>
                             <li>gelatin</li>
                             <li>juice</li>
@@ -139,5 +170,8 @@
         <!-- </div> -->
     </table>
 </div>
+<a href =" https://es.pngtree.com/freepng/chocolate-ice-cream_2844995.html">Chocolate Cone</a>
+</br>
+<a href = "https://addapinch.com/wp-content/uploads/2017/07/old-fashioned-vanilla-ice-cream-recipe-DSC_4239.jpg" >Vanilla Cone Source</a>
 </body>
-<html>
+</html>
