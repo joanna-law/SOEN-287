@@ -16,13 +16,20 @@
         var even = -1;
         do {
             var userIn = prompt("Please input a list of number:")
-            if ((userIn % 1 == 0) & (userIn > 0)) {
+            if (userIn == null){
+            even = 0
+            odd = 0
+            totNum = 0
+            break;
+            }
+            if ((userIn % 1 == 0) & (userIn > 0)){
                 totNum++;
             }
             if (userIn % 2 == 0)
                 even++;
             if (userIn % 2 == 1)
                 odd++;
+            
         }
         while (userIn != 0);
         document.getElementById("totNum").innerHTML = totNum;

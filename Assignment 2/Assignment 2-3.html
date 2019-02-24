@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <Title>Multiplication Table</Title>
+    <script>
+
+                var nu = prompt("Multiplication table of: ")
+                document.write("<table border =\"1\" style = width:50%>");
+                for (var i = 0; i < parseInt(nu,10)+1; i++) {
+                    document.write("<tr>");
+                    for (var j = 1; j < parseInt(nu, 10) + 2; j++) {
+                        if (i == 0)
+                            document.write("<td>" + (j-1) + "</td>");
+                        else
+                        {
+                        if (j!=1)
+                            document.write("<td>" + (i * (j-1)) + "</td>");
+                            else
+                            document.write("<td>" + (i * (j)) + "</td>");}
+                    }
+                    document.write("</tr>"); 
+                }
+                document.write("</table>");
+    </script>
+</head>
+        
+</html>
